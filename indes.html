@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secondary School Study Hub</title>
+<style>
+body { font-family: Arial; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+header { background: #4CAF50; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; }
+nav { background: #333; color: white; text-align: center; padding: 10px; position: sticky; top: 140px; z-index: 90; }
+nav a { color: white; margin: 0 10px; text-decoration: none; padding: 5px 10px; border-radius: 3px; }
+nav a:hover { background-color: #575757; }
+main { padding: 20px; }
+section { margin-bottom: 20px; background: white; padding: 15px; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+footer { text-align: center; padding: 10px; background: #333; color: white; }
+button { cursor: pointer; margin: 5px 0; }
+.dark-mode { background-color: #1e1e1e; color: #f0f0f0; }
+.dark-mode header, .dark-mode footer { background-color: #111; }
+.dark-mode nav { background-color: #222; }
+.dark-mode nav a:hover { background-color: #444; }
+.topic-title { cursor: pointer; font-weight: bold; margin: 5px 0; }
+.topic-content { display: none; margin-top: 5px; }
+.chapter-title { cursor: pointer; font-weight: bold; color: #2a2a2a; margin:5px 0; }
+.chapter-content { display: none; margin-left: 15px; border-left: 2px solid #4CAF50; padding-left: 10px; }
+#searchBar { width: 90%; padding: 8px; margin: 10px auto; display: block; border-radius: 5px; border: 1px solid #ccc; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Secondary School Study Hub</h1>
+    <button id="darkModeToggle" style="padding:5px 10px;">Toggle Dark Mode</button>
+</header>
+
+<input type="text" id="searchBar" placeholder="Search topics or novels..." />
+
+<nav>
+    <a href="#mathematics">Mathematics</a>
+    <a href="#physics">Physics</a>
+    <a href="#chemistry">Chemistry</a>
+    <a href="#novels">JAMB Novels</a>
+</nav>
+
+<main>
+
+<!-- ================= MATHEMATICS ================= -->
+<section id="mathematics">
+<h2>Mathematics</h2>
+
+<div class="topic">
+  <p class="topic-title">Sets</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Sets are well-defined collections of distinct objects called elements.</p>
+    <h4>Notes</h4>
+    <p>Union, Intersection, Difference, Complement.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Find the union and intersection of A={1,2,3} and B={2,3,4}.</li>
+      <li>Find the complement of C={1,2,3} in U={1,2,3,4,5}.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Arithmetic Progression</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>An AP is a sequence where each term after the first is obtained by adding a common difference.</p>
+    <h4>Notes</h4>
+    <p>Formula: a_n = a_1 + (n-1)d</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Find the 10th term of 2,5,8,11,...</li>
+      <li>Sum of first 20 terms of 3,7,11,...</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Quadratic Equations</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Equations of the form ax² + bx + c = 0.</p>
+    <h4>Notes</h4>
+    <p>Solving using factorization, completing the square, or quadratic formula.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Solve x² - 5x + 6 = 0.</li>
+      <li>Use quadratic formula to solve 2x² - 3x - 5 = 0.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Sequence & Series</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Sequences are ordered lists of numbers; series is their sum.</p>
+    <h4>Notes</h4>
+    <p>Arithmetic & geometric sequences and series formulas.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Find the sum of first 10 terms of 2,4,6,...</li>
+      <li>Determine 5th term of geometric sequence 3,6,12,...</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Statistics</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Collection, analysis, interpretation, and presentation of data.</p>
+    <h4>Notes</h4>
+    <p>Mean, Median, Mode, Range, Standard Deviation.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Find mean, median, mode of 2,4,6,8,10.</li>
+      <li>Find the range of 5,9,12,7,3.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<!-- ================= PHYSICS ================= -->
+<section id="physics">
+<h2>Physics</h2>
+
+<div class="topic">
+  <p class="topic-title">Fundamental & Derived Units</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Fundamental units are basic measurements; derived units are combinations.</p>
+    <h4>Notes</h4>
+    <p>Length = m, Mass = kg, Time = s; Speed = m/s, Force = kg·m/s²</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>List three fundamental units.</li>
+      <li>Express force in fundamental units.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Laws of Motion</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Newton's laws of motion describe the relationship between motion and forces.</p>
+    <h4>Notes</h4>
+    <p>1st Law: Inertia; 2nd Law: F=ma; 3rd Law: Action-Reaction.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Give an example of Newton's 1st law.</li>
+      <li>Calculate force for m=5kg, a=2m/s².</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Work, Power & Energy</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Work done = Force × Distance; Power = Work/Time; Energy = capacity to do work.</p>
+    <h4>Notes</h4>
+    <p>Kinetic & potential energy, mechanical work.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Calculate work done by a 10N force over 5m.</li>
+      <li>Find power if 50J work is done in 10s.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Light & Optics</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Study of light propagation, reflection, refraction, and lenses.</p>
+    <h4>Notes</h4>
+    <p>Laws of reflection, Snell's law, focal length of lenses.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Calculate image distance for a lens with f=10cm and u=15cm.</li>
+      <li>Explain total internal reflection.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Electricity & Magnetism</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Study of electric charges, currents, fields, and magnets.</p>
+    <h4>Notes</h4>
+    <p>Ohm’s law, Coulomb's law, magnetic fields, circuits.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Find current if V=12V and R=4Ω.</li>
+      <li>Calculate force between two charges of 2C and 3C separated by 1m.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<!-- ================= CHEMISTRY ================= -->
+<section id="chemistry">
+<h2>Chemistry</h2>
+
+<div class="topic">
+  <p class="topic-title">Introduction to Chemistry</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Chemistry is the study of matter, its properties, and changes.</p>
+    <h4>Notes</h4>
+    <p>Branches: Organic, Inorganic, Physical, Analytical.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>List the main branches of chemistry.</li>
+      <li>Give 2 examples of chemical changes.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">States of Matter</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Matter exists in solid, liquid, and gas states.</p>
+    <h4>Notes</h4>
+    <p>Changes: Melting, Freezing, Vaporization, Condensation, Sublimation.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Give an example of sublimation.</li>
+      <li>Explain the change of state from liquid to gas.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Atomic Structure</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Atoms consist of protons, neutrons, and electrons.</p>
+    <h4>Notes</h4>
+    <p>Electron configuration, isotopes, mass number.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Determine the number of protons and electrons in O atom.</li>
+      <li>Define isotopes of hydrogen.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Periodic Table</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Arrangement of elements by atomic number and properties.</p>
+    <h4>Notes</h4>
+    <p>Groups, periods, metals, non-metals, noble gases.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Identify the group of oxygen.</li>
+      <li>Find period number of Na.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Chemical Bonding</p>
+  <div class="topic-content">
+    <h4>Definition</h4>
+    <p>Atoms combine by sharing or transferring electrons to form compounds.</p>
+    <h4>Notes</h4>
+    <p>Ionic, covalent, and metallic bonds.</p>
+    <h4>Exercises</h4>
+    <ul>
+      <li>Give examples of ionic and covalent compounds.</li>
+      <li>Explain metallic bonding in sodium.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<!-- ================= JAMB NOVELS ================= -->
+<section id="novels">
+<h2>JAMB Novels</h2>
+
+<div class="topic">
+  <p class="topic-title">Leaky Headmaster</p>
+  <div class="topic-content">
+    <div class="chapter">
+      <p class="chapter-title">Chapter 1</p>
+      <div class="chapter-content">
+        <p>Full text of Chapter 1 of Leaky Headmaster goes here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">The Life Changer</p>
+  <div class="topic-content">
+    <div class="chapter">
+      <p class="chapter-title">Chapter 1</p>
+      <div class="chapter-content">
+        <p>Full text of Chapter 1 of The Life Changer goes here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="topic">
+  <p class="topic-title">Sweet Sixteen</p>
+  <div class="topic-content">
+    <div class="chapter">
+      <p class="chapter-title">Chapter 1</p>
+      <div class="chapter-content">
+        <p>Full text of Chapter 1 of Sweet Sixteen goes here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Study Hub</p>
+</footer>
+
+<script>
+// Dark Mode Toggle
+const toggle = document.getElementById('darkModeToggle');
+toggle.addEventListener('click', () => { document.body.classList.toggle('dark-mode'); });
+
+// Expand/Collapse topics
+document.querySelectorAll('.topic-title').forEach(title => {
+  title.addEventListener('click', () => {
+    const content = title.nextElementSibling;
+    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+  });
+});
+
+// Expand/Collapse chapters
+document.querySelectorAll('.chapter-title').forEach(chap => {
+  chap.addEventListener('click', () => {
+    const content = chap.nextElementSibling;
+    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+  });
+});
+
+// Search functionality
+const searchBar = document.getElementById('searchBar');
+searchBar.addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+  document.querySelectorAll('.topic, .chapter').forEach(item => {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(query) ? 'block' : 'none';
+  });
+});
+
+// Smooth scroll for nav clicks
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+  });
+});
+</script>
+
+</body>
+</html>
